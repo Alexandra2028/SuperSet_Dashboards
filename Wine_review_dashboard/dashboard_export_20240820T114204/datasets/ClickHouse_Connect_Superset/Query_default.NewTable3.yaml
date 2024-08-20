@@ -1,0 +1,90 @@
+table_name: Query default.NewTable3
+main_dttm_col: null
+description: null
+default_endpoint: null
+offset: 0
+cache_timeout: null
+schema: default
+sql: "SELECT country, variety, CASE \nWHEN description LIKE '%plum%' THEN 'Plum' \n\
+  WHEN description LIKE '%srewberr%' THEN 'Srewberry'\nWHEN description LIKE '%raspberr%'\
+  \ THEN 'Raspberry'\nWHEN description LIKE '%apple%' THEN 'Apple'\nWHEN description\
+  \ LIKE '%pear%' THEN 'Pear'\nWHEN description LIKE '%peach%' THEN 'Peach'\nWHEN\
+  \ description LIKE '%cherr%' THEN 'Cherry'\nWHEN description LIKE '%vanill%' THEN\
+  \ 'Vanilla'\nWHEN description LIKE '%chocolate%' THEN 'Chocolate'\nWHEN description\
+  \ LIKE '%coffee%' THEN 'Coffee'\nWHEN description LIKE '%orange%' THEN 'Orange'\n\
+  WHEN description LIKE '%mineral%' THEN 'Mineral'\nWHEN description LIKE '%tanni%'\
+  \ THEN 'Tannic'\nWHEN description LIKE '%nut%' THEN 'Nutty'\nWHEN description LIKE\
+  \ '%green fruit%' THEN 'Green fruits'\nWHEN description LIKE '%tropical%' THEN 'Tropical'\n\
+  WHEN description LIKE '%blackberr%' THEN 'Blackberry'\nWHEN description LIKE '%tobacco%'\
+  \ THEN 'Tobacco'\nWHEN description LIKE '%acid%' THEN 'Acidic'\nWHEN description\
+  \ LIKE '%herb%' THEN 'Herbal'\nWHEN description LIKE '%pepper%' THEN 'Pepper'\n\
+  WHEN description LIKE '%light%' THEN 'Light'\nWHEN description LIKE '%dense%' THEN\
+  \ 'Dense'\nWHEN description LIKE '%wood%' THEN 'Woody'\nWHEN description LIKE '%fresh%'\
+  \ THEN 'Fresh'\nWHEN description LIKE '%almond%' THEN 'Almond'\nWHEN description\
+  \ LIKE '%oak%' THEN 'Oaky'\nWHEN description LIKE '%black fruit%' THEN 'Black fruits'\n\
+  WHEN description LIKE '%cream%' THEN 'Creamy'\nWHEN description LIKE '%easy-drink%'\
+  \ THEN 'Easy-drinking'\nWHEN description LIKE '%soft%' THEN 'Soft'\nWHEN description\
+  \ LIKE '%honey%' THEN 'Honey'\nWHEN description LIKE '%passion fruit%' THEN 'Passion\
+  \ fruit'\nWHEN description LIKE '%apricot%' THEN 'Apricot'\nWHEN description LIKE\
+  \ '%lemon%' THEN 'Lemon'\nWHEN description LIKE '%silky%' THEN 'Silky'\nWHEN description\
+  \ LIKE '%red-fruit%' THEN 'Red-fruits'\nWHEN description LIKE '%tea%' THEN 'Tea'\n\
+  WHEN description LIKE '%lychee%' THEN 'Lychee'\nWHEN description LIKE '%cinnamon%'\
+  \ THEN 'Cinnamon'\n\nELSE description END AS taste\nFROM `default`.`NewTable`\n\
+  ORDER BY taste\n"
+params: null
+template_params: null
+filter_select_enabled: true
+fetch_values_predicate: null
+extra: null
+normalize_columns: false
+always_filter_main_dttm: false
+uuid: 32d804cb-c9ee-4b7b-912c-c682972f5948
+metrics:
+- metric_name: count
+  verbose_name: COUNT(*)
+  metric_type: count
+  expression: COUNT(*)
+  description: null
+  d3format: null
+  currency: null
+  extra: null
+  warning_text: null
+columns:
+- column_name: variety
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: String
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: taste
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: String
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: country
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: String
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+version: 1.0.0
+database_uuid: 1112ce06-dcff-463e-92ef-e6c9770f33bb

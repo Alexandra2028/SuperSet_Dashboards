@@ -1,0 +1,390 @@
+dashboard_title: Wine Review Dataset
+description: null
+css: ''
+slug: null
+certified_by: ''
+certification_details: ''
+published: true
+uuid: bb543929-fa8d-40ec-a3b7-8cfe70d12d4e
+position:
+  CHART-explore-100-1:
+    children: []
+    id: CHART-explore-100-1
+    meta:
+      chartId: 100
+      height: 50
+      sliceName: Most popular wine variety in the world
+      uuid: 77928dc1-eecb-42ea-b631-124b85477cc1
+      width: 5
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-TQY8-2X5Pd
+    type: CHART
+  CHART-explore-101-1:
+    children: []
+    id: CHART-explore-101-1
+    meta:
+      chartId: 101
+      height: 50
+      sliceName: The number of wines and their varieties were tested by country
+      uuid: ac708473-2105-41c6-a739-7b645b7a2869
+      width: 7
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-ZKGiL8m7-u
+    type: CHART
+  CHART-explore-102-1:
+    children: []
+    id: CHART-explore-102-1
+    meta:
+      chartId: 102
+      height: 50
+      sliceName: The most common descriptors for describing the taste of wine
+      uuid: c55aa2d0-321f-495d-99b6-40b484f78bc8
+      width: 3
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-TQY8-2X5Pd
+    type: CHART
+  CHART-explore-103-1:
+    children: []
+    id: CHART-explore-103-1
+    meta:
+      chartId: 103
+      height: 62
+      sliceName: Percentage of the most popular wine varieties in the countries
+      uuid: 74a218f0-0194-4366-9596-736c66460b45
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-XL3Qj5snnY
+    type: CHART
+  CHART-explore-108-1:
+    children: []
+    id: CHART-explore-108-1
+    meta:
+      chartId: 108
+      height: 61
+      sliceName: Wine production volume by province and region
+      uuid: d71e1168-fc4b-468b-acc2-b1fc08335c02
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-BKEd2ewmJ8
+    type: CHART
+  CHART-explore-98-1:
+    children: []
+    id: CHART-explore-98-1
+    meta:
+      chartId: 98
+      height: 50
+      sliceName: Top 50 winery by average points with prices
+      uuid: 5e800547-b3a2-4a75-977c-8407dfc86d8c
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-TQY8-2X5Pd
+    type: CHART
+  CHART-w_ECDFPiY1:
+    children: []
+    id: CHART-w_ECDFPiY1
+    meta:
+      chartId: 99
+      height: 50
+      sliceName: Top 15 countries by average point of wine
+      uuid: 252b1bd0-8ad1-4e21-b8ac-b8fbb67ced54
+      width: 5
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-ZKGiL8m7-u
+    type: CHART
+  DASHBOARD_VERSION_KEY: v2
+  GRID_ID:
+    children:
+    - ROW-V7otaXe-96
+    - ROW-TQY8-2X5Pd
+    - ROW-ZKGiL8m7-u
+    - ROW-XL3Qj5snnY
+    - ROW-BKEd2ewmJ8
+    id: GRID_ID
+    parents:
+    - ROOT_ID
+    type: GRID
+  HEADER_ID:
+    id: HEADER_ID
+    meta:
+      text: Wine Review Dataset
+    type: HEADER
+  MARKDOWN-NDbsnXVNiA:
+    children: []
+    id: MARKDOWN-NDbsnXVNiA
+    meta:
+      code: "# \u2728This dataset includes 150k wine reviews with variety, location,\
+        \ winery, price, and description\n"
+      height: 12
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-V7otaXe-96
+    type: MARKDOWN
+  ROOT_ID:
+    children:
+    - GRID_ID
+    id: ROOT_ID
+    type: ROOT
+  ROW-BKEd2ewmJ8:
+    children:
+    - CHART-explore-108-1
+    id: ROW-BKEd2ewmJ8
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-TQY8-2X5Pd:
+    children:
+    - CHART-explore-98-1
+    - CHART-explore-100-1
+    - CHART-explore-102-1
+    id: ROW-TQY8-2X5Pd
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-V7otaXe-96:
+    children:
+    - MARKDOWN-NDbsnXVNiA
+    id: ROW-V7otaXe-96
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-XL3Qj5snnY:
+    children:
+    - CHART-explore-103-1
+    id: ROW-XL3Qj5snnY
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-ZKGiL8m7-u:
+    children:
+    - CHART-explore-101-1
+    - CHART-w_ECDFPiY1
+    id: ROW-ZKGiL8m7-u
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+metadata:
+  chart_configuration:
+    '98':
+      id: 98
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 99
+        - 100
+        - 101
+        - 102
+        - 103
+        - 108
+    '99':
+      id: 99
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 98
+        - 100
+        - 101
+        - 102
+        - 103
+        - 108
+    '100':
+      id: 100
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 98
+        - 99
+        - 101
+        - 102
+        - 103
+        - 108
+    '101':
+      id: 101
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 98
+        - 99
+        - 100
+        - 102
+        - 103
+        - 108
+    '103':
+      id: 103
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 98
+        - 99
+        - 100
+        - 101
+        - 102
+        - 108
+    '108':
+      id: 108
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 98
+        - 99
+        - 100
+        - 101
+        - 102
+        - 103
+  global_chart_configuration:
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    chartsInScope:
+    - 98
+    - 99
+    - 100
+    - 101
+    - 102
+    - 103
+    - 108
+  color_scheme: ''
+  refresh_frequency: 0
+  shared_label_colors:
+    Percentage: '#1FA8C9'
+    Alsace: '#454E7C'
+    Burgundy: '#5AC189'
+    Champagne: '#FF7F44'
+    Loire Valley: '#666666'
+    France: '#E04355'
+    Tuscany: '#FCC700'
+    Italy: '#A868B7'
+    Western Australia: '#3CCCCB'
+    South Australia: '#A38F79'
+    Victoria: '#8FD3E4'
+    Australia Other: '#A1A6BD'
+    Australia: '#ACE1C4'
+    California: '#FEC0A1'
+    Washington: '#B2B2B2'
+    US: '#EFA1AA'
+    Mendoza Province: '#FDE380'
+    Argentina: '#D3B3DA'
+    Levante: '#9EE5E5'
+    Galicia: '#D1C6BC'
+    Northern Spain: '#1FA8C9'
+    Catalonia: '#454E7C'
+    Spain: '#5AC189'
+    Pinot Noir: '#3182bd'
+    Chardonnay: '#9ecae1'
+    Red Blend: '#e6550d'
+    Cabernet Sauvignon: '#fdae6b'
+    Bordeaux-style Red Blend: '#31a354'
+    Riesling: '#a1d99b'
+    Syrah: '#756bb1'
+    Sauvignon Blanc: '#bcbddc'
+    "Ros\xE9": '#636363'
+    Merlot: '#bdbdbd'
+    Average point: '#2f4554'
+    Cherry: '#1FA8C9'
+    Plum: '#5AC189'
+    Apple: '#666666'
+    Tannic: '#FCC700'
+    Acidic: '#3CCCCB'
+    Peach: '#8FD3E4'
+    Pear: '#ACE1C4'
+    Mineral: '#B2B2B2'
+    Vanilla: '#FDE380'
+    Chocolate: '#9EE5E5'
+    Herbal: '#454E7C'
+    Orange: '#A868B7'
+    Light: '#FEC0A1'
+    Fresh: '#D1C6BC'
+    Oaky: '#A38F79'
+    Pepper: '#FF7F44'
+    Nutty: '#E04355'
+    Coffee: '#D3B3DA'
+    Tropical: '#A1A6BD'
+    Almond: '#EFA1AA'
+    Tobacco: '#1FA8C9'
+    Woody: '#454E7C'
+    Honey: '#5AC189'
+    Soft: '#FF7F44'
+    Apricot: '#666666'
+    Cinnamon: '#E04355'
+    Tea: '#FCC700'
+    Lychee: '#A868B7'
+    Silky: '#3CCCCB'
+    Creamy: '#A38F79'
+    Dense: '#8FD3E4'
+    Lemon: '#A1A6BD'
+    Green fruits: '#ACE1C4'
+    Interesting: '#FEC0A1'
+    Passion fruit: '#B2B2B2'
+    Red-fruits: '#EFA1AA'
+    Like the D&J: '#FDE380'
+    Quite heavy: '#D3B3DA'
+    Easy-drinking: '#9EE5E5'
+    Gorgeous stuff: '#D1C6BC'
+    Raspberry: '#A868B7'
+    Veneto: '#454E7C'
+    Piedmont: '#5AC189'
+    Sicily & Sardinia: '#666666'
+    Beaujolais: '#A868B7'
+    Bordeaux: '#3CCCCB'
+    New York: '#ACE1C4'
+    Blackberry: '#666666'
+    Black fruits: '#EFA1AA'
+    Oregon: '#454E7C'
+    Southwest France: '#FCC700'
+    "Rh\xF4ne Valley": '#A868B7'
+    France Other: '#3CCCCB'
+    Provence: '#ACE1C4'
+    Northeastern Italy: '#EFA1AA'
+    Andalucia: '#E04355'
+    Languedoc-Roussillon: '#ACE1C4'
+    Spanish Islands: '#B2B2B2'
+    Judi Sorensen Flom: '#FEC0A1'
+    Central Italy: '#FEC0A1'
+    Central Spain: '#D3B3DA'
+    Deep and ripe: '#D1C6BC'
+    The nose is gorgeous: '#D3B3DA'
+    A big Pinot Noir: '#9EE5E5'
+    Stemmy and raw smelling: '#D3B3DA'
+    Sweet and welcoming: '#9EE5E5'
+  color_scheme_domain: []
+  expanded_slices: {}
+  label_colors: {}
+  timed_refresh_immune_slices: []
+  cross_filters_enabled: true
+  default_filters: '{}'
+version: 1.0.0

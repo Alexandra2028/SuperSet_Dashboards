@@ -1,0 +1,55 @@
+slice_name: Wine production volume by province and region
+description: null
+certified_by: null
+certification_details: null
+viz_type: treemap_v2
+params:
+  datasource: 42__table
+  viz_type: treemap_v2
+  groupby:
+  - country
+  - province
+  - region_1
+  metric:
+    expressionType: SIMPLE
+    column:
+      advanced_data_type: null
+      certification_details: null
+      certified_by: null
+      column_name: region_1
+      description: null
+      expression: null
+      filterable: true
+      groupby: true
+      id: 823
+      is_certified: false
+      is_dttm: false
+      python_date_format: null
+      type: String
+      type_generic: 1
+      verbose_name: null
+      warning_markdown: null
+    aggregate: COUNT
+    sqlExpression: null
+    datasourceWarning: false
+    hasCustomLabel: true
+    label: 'Percentage '
+    optionName: metric_ean2q45gmar_x3axn0mgzp
+  row_limit: 1000
+  adhoc_filters: []
+  color_scheme: supersetColors
+  show_labels: true
+  show_upper_labels: true
+  label_type: Key
+  number_format: SMART_NUMBER
+  date_format: smart_date
+  extra_form_data: {}
+  dashboards:
+  - 11
+query_context: '{"datasource":{"id":42,"type":"table"},"force":false,"queries":[{"filters":[],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":["country","province","region_1"],"metrics":[{"expressionType":"SIMPLE","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"region_1","description":null,"expression":null,"filterable":true,"groupby":true,"id":823,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"String","type_generic":1,"verbose_name":null,"warning_markdown":null},"aggregate":"COUNT","sqlExpression":null,"datasourceWarning":false,"hasCustomLabel":true,"label":"Percentage
+  ","optionName":"metric_ean2q45gmar_x3axn0mgzp"}],"annotation_layers":[],"row_limit":1000,"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"datasource":"42__table","viz_type":"treemap_v2","groupby":["country","province","region_1"],"metric":{"expressionType":"SIMPLE","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"region_1","description":null,"expression":null,"filterable":true,"groupby":true,"id":823,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"String","type_generic":1,"verbose_name":null,"warning_markdown":null},"aggregate":"COUNT","sqlExpression":null,"datasourceWarning":false,"hasCustomLabel":true,"label":"Percentage
+  ","optionName":"metric_ean2q45gmar_x3axn0mgzp"},"row_limit":1000,"adhoc_filters":[],"color_scheme":"supersetColors","show_labels":true,"show_upper_labels":true,"label_type":"Key","number_format":"SMART_NUMBER","date_format":"smart_date","extra_form_data":{},"dashboards":[11],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: d71e1168-fc4b-468b-acc2-b1fc08335c02
+version: 1.0.0
+dataset_uuid: faac2b11-4eb8-4a17-9cd9-9ac5764042bd

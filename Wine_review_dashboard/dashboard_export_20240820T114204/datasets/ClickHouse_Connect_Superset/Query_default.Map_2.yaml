@@ -1,0 +1,87 @@
+table_name: Query default.Map 2
+main_dttm_col: null
+description: null
+default_endpoint: null
+offset: 0
+cache_timeout: null
+schema: default
+sql: "SELECT country, count_place, variety, count_variety/count_country AS pers\n\
+  FROM (\nSELECT *\nFROM (\nSELECT country, row_number() over (partition by country\
+  \ ORDER BY COUNT(variety) DESC) AS count_place, variety, COUNT(variety) AS count_variety\n\
+  FROM `default`.`NewTable`\nWHERE variety !='' AND country !=''\nGROUP BY country,\
+  \ variety\nORDER BY COUNT(variety) DESC\n) AS t1 \nLEFT JOIN\n(\nSELECT country,\
+  \ COUNT(country) AS count_country\nFROM `default`.`NewTable`\nGROUP BY country\n\
+  ) AS t2\nON t1.country=t2.country\n)\nWHERE variety IN \n(\nSELECT variety\nFROM\
+  \ `default`.`NewTable`\nWHERE variety !=''\nGROUP BY variety\nORDER BY COUNT(DISTINCT\
+  \ country) DESC\nLIMIT 15\n) AND country IN\n(\nSELECT country\nFROM `default`.`NewTable`\n\
+  WHERE country !=''\nGROUP BY country\nORDER BY COUNT(country) DESC\nLIMIT 12\n)\n\
+  ORDER BY count_place\nLIMIT 300"
+params: null
+template_params: null
+filter_select_enabled: true
+fetch_values_predicate: null
+extra: null
+normalize_columns: false
+always_filter_main_dttm: false
+uuid: d85d957d-b5a6-49c6-b9e2-38fbbd1ae56b
+metrics:
+- metric_name: count
+  verbose_name: COUNT(*)
+  metric_type: count
+  expression: COUNT(*)
+  description: null
+  d3format: null
+  currency: null
+  extra: null
+  warning_text: null
+columns:
+- column_name: pers
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: Float64
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: count_place
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: UInt64
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: variety
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: String
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+- column_name: country
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: String
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  extra: null
+version: 1.0.0
+database_uuid: 1112ce06-dcff-463e-92ef-e6c9770f33bb

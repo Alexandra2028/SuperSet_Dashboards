@@ -1,0 +1,38 @@
+slice_name: Top 50 winery by average points with prices
+description: null
+certified_by: null
+certification_details: null
+viz_type: table
+params:
+  datasource: 25__table
+  viz_type: table
+  slice_id: 98
+  query_mode: raw
+  groupby: []
+  temporal_columns_lookup: {}
+  all_columns:
+  - winery
+  - country
+  - avg_point
+  - avg_price
+  percent_metrics: []
+  adhoc_filters: []
+  order_by_cols: []
+  row_limit: 1000
+  table_timestamp_format: smart_date
+  show_cell_bars: true
+  color_pn: true
+  column_config:
+    avg_point:
+      d3NumberFormat: ',.1f'
+    avg_price:
+      d3NumberFormat: ',.1f'
+  conditional_formatting: []
+  extra_form_data: {}
+  dashboards:
+  - 11
+query_context: '{"datasource":{"id":25,"type":"table"},"force":false,"queries":[{"filters":[],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":["winery","country","avg_point","avg_price"],"orderby":[],"annotation_layers":[],"row_limit":1000,"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"post_processing":[]}],"form_data":{"datasource":"25__table","viz_type":"table","slice_id":98,"query_mode":"raw","groupby":[],"temporal_columns_lookup":{},"all_columns":["winery","country","avg_point","avg_price"],"percent_metrics":[],"adhoc_filters":[],"order_by_cols":[],"row_limit":1000,"table_timestamp_format":"smart_date","show_cell_bars":true,"color_pn":true,"column_config":{"avg_point":{"d3NumberFormat":",.1f"},"avg_price":{"d3NumberFormat":",.1f"}},"conditional_formatting":[],"extra_form_data":{},"dashboards":[11],"force":false,"result_format":"json","result_type":"full","include_time":false},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 5e800547-b3a2-4a75-977c-8407dfc86d8c
+version: 1.0.0
+dataset_uuid: 0ef7d8e9-6a03-49a3-a975-d02382f47a69
